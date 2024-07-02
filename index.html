@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Anshul Chaturvedi</title>
+  <link rel="icon" href="css/Anshul_PC.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">Portfolio</span> </a>
+    <button id="theme-toggle">
+      <span class="toggle-icon">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </span>
+    </button>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a id="nava" href="#home">Home</a></li>
+      <li><a id="nava" href="#about">About</a></li>
+      <li><a id="nava" href="#services">Specialization</a></li>
+      <li><a id="nava" href="https://drive.google.com/file/d/1dEpzrr2BfxtFzVhnhmT8EkolqRJXFYp5/view?usp=sharing">Resume</a></li>
+      <li><a id="nava" href="#cta">Experience</a></li>
+      <li><a id="nava" href="#projects">Projects</a></li>
+  </header>
+
+
+  <!-- START HOME -->
+  <section class="home" id="home">
+
+    <div class="home-text">
+      <h5>Hello, I am</h5>
+      <h1>Anshul Chaturvedi</h1>
+      <h5>I'm a <span style="color: var(--main-color);" class="input"></span></h5>
+      <p>Hey! I'm a coding enthusiast obsessed with data structures, crafting boundary-pushing projects and stylish apps. Eager to learn and revolutionize as Software Developer. Join me on this epic journey! 🔥🔥</p>
+      <a href="https://drive.google.com/file/d/1dEpzrr2BfxtFzVhnhmT8EkolqRJXFYp5/view?usp=sharing" class="btn"><strong>Download CV</strong></a>
+    </div>
+
+    <div class="home-img">
+      <img src="css/Anshul_PC.jpeg" alt="">
+    </div>
+  </section>
+
+
+  
+  <!-- START ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="css/AboutA.png" alt="">
+    </div>
+
+    <div class="about-text">
+      <h3>About Me</h3>
+      <h2>A passionate individual turned into a coding enthusiast, crafting symphonies with algorithms.</h2>
+      <p>I am a driven and dynamic final year BTech student, fueled by my passion for coding, unwavering enthusiasm for building Mobile applications, and the joy of Digital Designing. When not indulging in pizza, I'm devoted to utilizing technology as a force for good, with a burning desire to bring about a positive impact in society. </p>
+      <div class="main-btn">
+        <a href="#contact" class="btn"><strong>Contact Me</strong></a>
+        <a href="#resume" class="btn"><strong>Portfolio</strong></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- start audio -->
+  <section class="audio-sec">
+    <div class="confused-img" style="text-align: center;">
+      <img src="css/confuseda.png" alt="confused">
+    </div>
+    
+    <div class="audio-text">
+      <h2>Why Anshul?<br>Why Software Developer?</h2> <br>
+      <!-- <img src="play.png" id="icon"> -->
+      <audio id="myAudio" src="Anshul voice.mp3"></audio>
+    <button  id="playButton" class="btn" onclick="playPause()"><i class='bx bx-play-circle'></i>Play</button>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+        var playButton = document.getElementById("playButton");
+
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+                playButton.innerHTML = "<i class='bx bx-pause-circle' ></i>Pause";
+            } else {
+                audio.pause();
+                playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+            }
+        }
+
+        audio.onended = function () {
+            playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+        };
+    </script>
+    </div>
+  </section>
+
+  <!-- START SERVICES -->
+  <section class="services" id="services">
+    <div class="center">
+      <h3>My Specialization?</h3>
+    </div>
+
+    <div class="service-content">
+
+      <div class="row">
+        <i class='fas fa-mobile-alt'></i>
+        <h3>Mobile App Developer</h3>
+        <p>Architecting apps with UI/UX,robust functionalities,transformative user experiences</p>
+        <br>
+        <iconify-icon icon="simple-icons:flutter" style="font-size: 35px; color: white;"></iconify-icon>
+        <iconify-icon icon="simple-icons:firebase" style="font-size: 35px; color: white;"></iconify-icon>
+        <iconify-icon icon="simple-icons:mongodb" style="font-size: 35px; color: white;"></iconify-icon>
+        <iconify-icon icon="simple-icons:dart" style="font-size: 35px; color: white;"></iconify-icon>
+        <iconify-icon icon="simple-icons:google" style="font-size: 35px; color: white;"></iconify-icon>
+      </div>
+
+
+      <div class="row">
+        <i class='fas fa-file-code'></i>
+        <h3>Programming</h3>
+        <p>Mastering the Language of Machines: A Symphony of Code and Logic, Crafting the Digital Landscape</p>
+        <br>
+          <iconify-icon icon="simple-icons:leetcode" style="font-size: 35px; color: white;"></iconify-icon>
+          <iconify-icon icon="simple-icons:geeksforgeeks" style="font-size: 35px; color: white;">
+
+       </iconify-icon><iconify-icon icon="simple-icons:stackoverflow" style="font-size: 35px; color: white;"></iconify-icon>
+      </div>
+
+      <div class="row">
+        <i class='fas fa-database'></i>
+        <h3>Big Data Analysis</h3>
+        <p>Exploring new databases enhancing skill in data management and optimization.</p>
+        <br>
+          <iconify-icon icon="simple-icons:apachehadoop" style="font-size: 35px; color: white;"></iconify-icon>
+          <iconify-icon icon="simple-icons:apachekafka" style="font-size: 35px; color: white;"></iconify-icon>
+          <iconify-icon icon="simple-icons:mysql" style="font-size: 35px; color: white;"></iconify-icon>
+          <iconify-icon icon="simple-icons:redis" style="font-size: 35px; color: white;"></iconify-icon>
+      </div>
+
+      <div class="row">
+      <i class='fas fa-edit'></i>
+        <h3>Digital Designer</h3>
+        <p>Crafting eye-catching designs that blend creativity,strategy and visual storytelling for impactful communication</p>
+        <br>
+        <iconify-icon icon="simple-icons:canva" style="font-size: 35px; color: white"></iconify-icon>
+        <iconify-icon icon="simple-icons:figma" style="font-size: 35px; color: white;"></iconify-icon>
+      
+      </div>
+
+    </div>
+  </section>
+
+<!-- my projects -->
+<section class="services" id="projects">
+    <div class="center">
+      <h3>PROJECTS</h3>
+    </div>
+
+    <div class="service-content projects">
+      
+
+        <a href="https://github.com/anshulchaturvedi5/Gumakkad1">
+        <div class="row">
+          <img src="css/GHUMAKKAD P.jpg" width="100%"  alt="">
+          <h3>Ghumakkad App<i class='bx bxs-right-arrow-circle'></i></h3>
+          <p>Love Travelling!.From Guides to local insights,personalized searches to 24/7 chatbot support.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/anshulchaturvedi5/JIIT-CONNECT/tree/master">
+        <div class="row">
+          <img src="css/JIITC.jpg" width="100%"  alt="">
+          <h3>Jiit-Connect App<i class='bx bxs-right-arrow-circle'></i></h3>
+          <p>JIIT Connect elevating your college life with great insights. </p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="row">
+          <img src="css/AnshulP.png" width="100%"  alt="">
+          <h3>Portfolio<i class='bx bxs-right-arrow-circle'></i> </h3>
+          <p>What I create?- Explore the wonders of my portfolio!</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/anshulchaturvedi5/CO2_emission">
+        <div class="row">
+          <img src="css/c.jpg" width="100%"  alt="">
+          <h3>C02_Emission Detector<i class='bx bxs-right-arrow-circle'></i> </h3>
+          <p>Real-time CO2 emission data processing,data generation and data visualization using Apache Kafka</p>
+        </div>
+      </a>
+
+      
+
+    </div>
+  </section>
+
+<!-- my projects -->
+<section class="services" id="cta">
+  <div class="center">
+    <h3>Experience</h3>
+  </div>
+
+  <div class="service-content projects">
+
+
+    <a href="https://xathon.mettl.com/event/amazonmlsummerschool">
+      <div class="row">
+        <img src="css/ML.jpg" width="100%"  alt="">
+        <h3>Amazon ML Summer School - 2024</h3>
+        <p>Mentee</p>
+      </div>
+    </a>
+    
+
+      <a href="https://www.linkedin.com/company/the-sparks-foundation/">
+      <div class="row">
+        <img src="css/S.jpg" width="100%"  alt="">
+        <h3>The Sparks Foundation</h3>
+        <p>App Developer & Designer Intern</p>
+      </div>
+    </a>
+
+    <a href="https://jiitopticachapter.com/team">
+      <div class="row">
+        <img src="css/O.jpg" width="100%"  alt="">
+        <h3>JIIT-Optica Chapter</i></h3>
+        <p>Digital Head</p>
+      </div>
+    </a>
+
+    <a href="https://www.jiit.ac.in/page-turner-society">
+      <div class="row">
+        <img src="css/p.jpg" width="100%"  alt="">
+        <h3>Page Turner Society</i> </h3>
+        <p>Digital Head</p>
+      </div>
+    </a>
+
+    <a href="https://www.linkedin.com/company/girlscriptsoc/posts/?feedView=all">
+      <div class="row">
+        <img src="css/gc.jpg" width="100%"  alt="">
+        <h3>GirlScript Summer of Code</h3>
+        <p>Contributor</p>
+      </div>
+    </a>
+
+
+  </div>
+</section>
+  
+
+
+  <!-- RESUME -->
+
+  <section class="resume" id="resume">
+    <div class="center">
+      <h3>Education</h3>
+    </div>
+
+    <div class="resume-content">
+      <div class="box">
+        <img src="css/st.jpg" width="100%"  alt="">
+        <h6>2018-2019</h6>
+        <h4>Secondary Exam</h4>
+        <h5>St.Joseph.Sr.Sec.School - 95.6%</h5>
+      </div>
+
+      <div class="box">
+        <img src="css/st.jpg" width="100%"  alt="">
+        <h6>2020-2021</h6>
+        <h4>Senior Secondary Exam</h4>
+        <h5>St.Joseph.Sr.Sec.School - 94.6%</h5>
+      </div>
+
+      <div class="box">
+        <img src="css/jiit.jpg" width="100%"  alt="">
+        <h6>September 2021 - Present</h6>
+        <h4>BTech CSE </h4>
+        <h5>Jaypee Institute of Information Technology</h5>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT ME -->
+  <section class="contact" id="contact">
+    <div class="center">
+      <h3>Contact Me</h3>
+      <br>
+      <a href="https://www.instagram.com/_anshulchaturvedi_/"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/anshul-chaturvedi-50bb54231/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/anshulchaturvedi5"><i class="fa-brands fa-square-github"></i></a>
+    </div>
+
+    <div class="contact-form">
+      <form action="mailto:acchaturvedi205@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="number" name="phone" placeholder="Contact">
+        <textarea name="Message" rows="10" cols="30" placeholder="Your Message" required></textarea>
+        <input type="submit" name="" value="Send" class="send-btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    <p>Designed with &#10084; by <b>Anshul Chaturvedi</b></p>
+
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- LINK TO JS -->
+  <script src="js/script.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var Typed = new Typed(".input", {
+      strings: [
+        "App Developer Ace",
+        "Big Data Buffs",
+        "Coding Champion",
+        "Digital Designer Dynamo",
+        "Engagement Enthusiast",
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+
+    });
+
+    const toggleModeBtn = document.getElementById("toggle-mode");
+    const body = document.body;
+
+    toggleModeBtn.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+
+</html>
